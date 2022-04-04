@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = inputName.getText().toString();
-                System.out.println(name);
                 if (!name.isEmpty()) {
                     Intent intent = new Intent(getApplicationContext(), Questions.class);
                     intent.putExtra("name", name);
